@@ -1,61 +1,83 @@
+
 #field {
+    
     width: 300px;
     height: 300px;
-    background: #2c3e50;
-    margin: 100px auto;
-    border: 3px solid black;
-    position: relative;
+    
+   
+    background: #2c3e50; 
+    
+    
+    margin: 100px auto; 
+    
+    
+    border: 3px solid black; 
+    
+    position: relative; 
     overflow: hidden;
-    transition: background 3s;
+    
+    
+    transition: background 3s; 
 }
 
 #small_sh {
+    
     width: 80px;
-    height: 80px;
+    height: 80px;  
     position: absolute;
     bottom: 10px;
-    left: 10px;
+    left: 10px; 
     z-index: 1;
-    transition: all 1s;
+    transition: all 1s; 
 }
 
 #big_sh {
+   
     width: 120px;
     height: 120px;
+    
+    
     position: absolute;
-    bottom: 30px;
+    bottom: 30px; 
     left: 60px;
-    z-index: 1;
-    transition: all 1s;
+     z-index: 1; 
+    transition: all 1s; 
 }
 
 #text {
+    
     font-family: 'Arial', sans-serif;
     font-size: 24px;
     position: absolute;
     bottom: 10px;
-    right: 10px;
-    color: #2c3e50;
-    z-index: 0;
+    right: 10px; 
+    color: #2c3e50; 
+    z-index: 0; 
     margin: 0;
 }
 
+
+
+
+
+
+
 @keyframes rotateAnimation {
-    0% {
-        transform: rotate(0deg);
-    }
-    100% {
-        transform: rotate(360deg);
-    }
+    0%   { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
-#field:hover {
-    background: transparent;
+
+#field:hover { 
+     
+    background: transparent; 
+   
 }
 
 #field:hover #small_sh {
-    width: 100px;
-    height: 100px;
+    
+    width: 100px; 
+    height: 100px; 
     bottom: 5px;
     left: 5px;
     -webkit-animation: 5s linear normal none infinite running rotateAnimation;
@@ -63,10 +85,11 @@
 }
 
 #field:hover #big_sh {
-    width: 140px;
-    height: 140px;
-    bottom: 40px;
-    left: 75px;
+     
+    width: 140px; 
+    height: 140px; 
+    bottom: 40px;  
+    left: 75px; 
     -webkit-animation: 5s linear normal none infinite running rotateAnimation;
     animation: rotateAnimation 5s linear infinite;
-} 
+}
