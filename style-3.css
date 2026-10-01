@@ -1,0 +1,63 @@
+body {
+    background: url('fancy-cushion.png'); 
+    margin: 0; 
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+#menu-block {
+    width: 600px;
+    height: 250px;
+    background: rgba(0, 0, 0, 0.3); 
+    margin-left: 300px;
+    margin-top: 150px;
+    position: absolute;             
+    border-radius: 15px;
+    overflow: hidden; 
+}
+
+
+#menu-block form {
+    margin: 0;
+    padding: 0;
+}
+
+
+#form1, #form2, #form3 {
+    position: relative;  
+    top: 50px;    
+    left: 225px;  
+} 
+
+
+
+.menu-btn {
+    width: 150px;
+    height: 50px;
+    background-color: #3498db;
+    color: white;
+    border: none;                   
+    border-radius: 10px;             
+    z-index: 1;                     
+    cursor: pointer;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.5); 
+    transition: background-color 0.3s ease;
+    
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.btn-text {
+    color: white;
+    font-size: 18px;
+    font-family: 'Verdana', sans-serif;
+    margin: 0;
+}
+
+.menu-btn:hover {
+    background-color: #e74c3c;
+    cursor: pointer;
+} 
